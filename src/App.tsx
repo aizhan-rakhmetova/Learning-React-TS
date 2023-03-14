@@ -2,22 +2,24 @@ import React from 'react';
 import Accordion from "./components/Accordion/Accordion";
 import './App.css';
 import {Rating} from "./components/Rating/Rating";
+import UncontrolledAccordion from "./components/Accordion/UncontrolledAccordion";
 
 function App() {
     return (
         <div>
-            <PageTitle title={"This is App Title"}/>
-            <PageTitle title={"This is the second App Title"}/>
-            Статья 1
-            <Accordion titleValue = {"Menu"} collapsed = {true}/>
-            <Accordion titleValue = {"Menu"} collapsed = {false}/>
-            Статья 2
-            <Rating value={0}/>
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>
-            <Rating value={5}/>
+            {/*<PageTitle title={"This is App Title"}/>*/}
+            {/*<PageTitle title={"This is the second App Title"}/>*/}
+            {/*Статья 1*/}
+            {/*<Accordion titleValue = {"Menu"} collapsed = {true}/>*/}
+            {/*<Accordion titleValue = {"Menu"} collapsed = {false}/>*/}
+            <UncontrolledAccordion titleValue={"Uncontrolled Menu"}/>
+            {/*Статья 2*/}
+            {/*<Rating value={0}/>*/}
+            {/*<Rating value={1}/>*/}
+            {/*<Rating value={2}/>*/}
+            {/*<Rating value={3}/>*/}
+            {/*<Rating value={4}/>*/}
+            {/*<Rating value={5}/>*/}
         </div>
     );
 }
